@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            display: flex;
+            width: 20%;
+            justify-content: center;
+            align-items: center;
+            padding: 1px 20px;
+        }
+
+        .navbar {
+            display: flex;
+            padding: 0px 110px;
+            margin: 26px;
+
+        }
+
+        .navlist {
+            display: flex;
+            align-content: center;
+            width: 100%;
+            justify-content: right;
+
+        }
+
+        .navlist li {
+            list-style: none;
+            padding: 14px 15px;
+
+        }
+
+        .navlist li a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .navlist li a:hover {
+            color: grey;
+
+        }
+
+        .logo1 {
+            display: flex;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .footer {
+            display: flex;
+            margin: 0px 136px;
+            background-color: #2c343e;
+            margin-top: 240px;
+            margin-bottom: 54px;
+            padding: 40px;
+
+        }
+
+        .footer1 {
+            display: flex;
+            align-content: center;
+            width: 100%;
+            justify-content: right;
+
+        }
+
+        .footer1 li {
+            list-style: none;
+            padding: 14px 15px;
+
+        }
+
+        .footer1 li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .footer1 li a:hover {
+            color: grey;
+
+        }
+
+        .class1 {
+            background-image: url(coffee.jpg);
+            width: 1280px;
+            border-radius: 12px;
+            background-repeat: no-repeat;
+        }
+
+        body .class1 {
+            margin: 0 auto;
+        }
+
+        .main1 {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding: 154px 80px;
+        }
+
+
+        button:hover {
+            color: white;
+            cursor: pointer;
+            background-color: green;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150px;
+            text-shadow: 0 0 10px #83888f;
+            opacity: 0.3;
+            padding-top: 150px;
+        }
+
+        .class2 {
+            width: auto;
+            text-align: center;
+            align-items: center;
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            align-items: center;
+        }
+
+        .contanier {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+        }
+
+        .product {
+            width: 200px;
+        }
+
+        .product img {
+            width: 200px;
+            cursor: pointer;
+        }
+
+
+        .cont_text p {
+            color: #333D4B;
+            font-weight: lighter;
+            font-family: 'Lato', sans-serif;
+        }
+
+
+        .class3 {
+
+            margin-top: 150px;
+        }
+
+        .main3 {
+            height: 500px;
+            background-color: #2C343E;
+            border-radius: 20px;
+            width: 90%;
+            padding: 6px 0px;
+            margin: 1px 75px;
+        }
+
+        .quality_card_conteiner {
+
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            bottom: 200px;
+        }
+
+        .card {
+            border: 1px solid pink;
+            width: 350px;
+            height: 370px;
+            background-color: #0E8784;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card_text h3 {
+            padding-top: 20px;
+            font-family: 'Fraunces', serif;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .card_text p {
+            padding-right: 35px;
+            padding-left: 35px;
+            padding-top: 20px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            color: white;
+        }
+
+        .message_text {
+            padding-top: 90px;
+            margin-left: 400px;
+            margin-right: 400px;
+            width: auto;
+            text-align: center;
+            color: white;
+        }
+
+        .message_text h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 50px;
+            padding: 30px;
+        }
+
+        .class4 {
+            margin-left: 200px;
+            width: 70%;
+        }
+
+        .main4 {
+            height: 120px;
+            font-size: 20px;
+        }
+
+        .main5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+        }
+
+        .con {
+            padding-bottom: 75px;
+        }
+
+
+        .box3 {
+            width: 360px;
+            gap: 45px;
+            display: grid;
+            padding: 1px 30px;
+        }
+
+        .box4 {
+            width: 360px;
+            gap: 23px;
+            display: grid;
+            padding: 1px 30px;
+        }
+
+        .box5 {
+            width: 400px;
+            gap: 45px;
+            display: grid;
+            padding: 1px 30px;
+        }
+
+       
+
+        .hello {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 18px;
+            background: #0e8784;
+            border-radius: 6px;
+            height: 56px;
+            width: 202px;
+        }
+
+        @media only screen and (max-width: 1400px) {
+            .navlist {
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+            }
+
+            .logo {
+
+                display: flex;
+                justify-content: center;
+                width: auto;
+
+
+
+            }
+
+            .main4 {
+                text-align: center;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                transition: all 0.9s ease-out;
+                height: 270px;
+            }
+
+            .class1 {
+                width: 550px;
+            }
+
+            .main1 {
+                padding: 60px 80px;
+            }
+
+            .title {
+                font-size: 70px;
+            }
+
+            .quality_message {
+                height: 630px;
+            }
+
+            .con {
+                flex-direction: column;
+                gap: 10px;
+                bottom: 150px;
+            }
+
+            .message_text {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            .main3 {
+                margin-left: 20px;
+                margin-right: 50px;
+            }
+
+            .quality_card_conteiner {
+                flex-direction: column;
+                gap: 10px;
+                bottom: 150px;
+            }
+
+            /* body .class4 {
+                width: 688px;
+            } */
+            .box3 {
+                width: 280px;
+                padding: 0%;
+                margin-bottom: 20px;
+            }
+
+            .box4 {
+                width: 280px;
+                padding: 0%;
+                margin-bottom: 20px;
+            }
+
+            .box5 {
+                width: 280px;
+                padding: 0%;
+                margin-bottom: 20px;
+            }
+
+            .hello {
+                text-align: center;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                width: auto;
+                margin-left: 80px;
+            }
+
+            .main5 {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                margin-right: 1px;
+                align-items: center;
+                height: 1210px;
+                margin: 0px 10px;
+            }
+
+            .footer {
+
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                margin: 400px 30px;
+            }
+
+
+            .con {
+                display: none;
+            }
+
+            .class1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contanier {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .class4 {
+                width: 340px;
+                margin: 0%;
+                height: 1100px;
+
+            }
+
+            .burger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar ">
+        <div class="logo">
+            <h3 style="font-size: 25px;"><img src="beans.png" alt=""> coffeeroasters</h3>
+
+        </div>
+
+        <ul class="navlist">
+            </div>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CREATE YOUR PLAN</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+
+        </div>
+
+    </nav>
+    <section class="class1">
+        <div class="main1">
+            <div class="box1">
+                <h1 style="font-size: 70px;color: white;width: 55%;"> Greate coffee made Simple</h1>
+                <br>
+                <p style="width: 50%; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                    dolorum beatae facilis, porro quae
+                    quibusdam? Earum non quis consequatur nam.</p>
+                <br>
+                <a href="#" target="_main">
+                    <button class="loginright"
+                        style="font-weight: 600; border-radius: 10px; width: 231px;padding: 8px 4px;transition: 0.4s;">Login
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="class2">
+        <div class="box2">
+            <h2 class="title">our collection</h2>
+        </div>
+        <div class="main2">
+            <div class="contanier">
+                <div class="product">
+                    <img src="packet1.jpg" alt="coffee pack image">
+                    <div class="text">
+                        <h3>Gran Espresso</h3>
+                        <br>
+                        <p>Light and
+                            flavorful blend with cocoa and black pepper for an
+                            intense experience</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="packet1.jpg" alt="coffee pack image">
+                    <div class="text">
+                        <h3>Gran Espresso</h3>
+                        <br>
+                        <p>Light and
+                            flavorful blend with cocoa and black pepper for an
+                            intense experience</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="packet1.jpg" alt="coffee pack image">
+                    <div class="text">
+                        <h3>Gran Espresso</h3>
+                        <br>
+                        <p>Light and
+                            flavorful blend with cocoa and black pepper for an
+                            intense experience</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="packet1.jpg" alt="coffee pack image">
+                    <div class="text">
+                        <h3>Gran Espresso</h3>
+                        <br>
+                        <p>Light and
+                            flavorful blend with cocoa and black pepper for an
+                            intense experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="class3">
+        <div class="main3">
+            <div class="message_text">
+                <h2>Why choose us?</h2>
+                <p>A large part of our role is choosing which
+                    particular coffees will be featured in our range. This means working closely with the best
+                    coffee growers to give you a more impactful experience on every level.</p>
+            </div>
+        </div>
+        <div class="quality_card_conteiner">
+            <div class="card">
+                <img src="https://kakaran.github.io/Coffee-Roasters-Clone/img/coffee-bean.png" alt="">
+                <div class="card_text">
+                    <h3>Best Quality</h3>
+                    <p>
+                        Discover an endless variety of the world’s best artisan coffee from each of our
+                        roasters.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <svg style="width:60px; fill:#FDD6BA;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M152 0H154.2C186.1 0 215.7 16.91 231.9 44.45L256 85.46L280.1 44.45C296.3 16.91 325.9 0 357.8 0H360C408.6 0 448 39.4 448 88C448 102.4 444.5 115.1 438.4 128H480C497.7 128 512 142.3 512 160V224C512 241.7 497.7 256 480 256H32C14.33 256 0 241.7 0 224V160C0 142.3 14.33 128 32 128H73.6C67.46 115.1 64 102.4 64 88C64 39.4 103.4 0 152 0zM190.5 68.78C182.9 55.91 169.1 48 154.2 48H152C129.9 48 112 65.91 112 88C112 110.1 129.9 128 152 128H225.3L190.5 68.78zM360 48H357.8C342.9 48 329.1 55.91 321.5 68.78L286.7 128H360C382.1 128 400 110.1 400 88C400 65.91 382.1 48 360 48V48zM32 288H224V512H80C53.49 512 32 490.5 32 464V288zM288 512V288H480V464C480 490.5 458.5 512 432 512H288z">
+                    </path>
+                </svg>
+                <div class="card_text">
+                    <h3>Exclusive benefits</h3>
+                    <p>
+                        Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                </div>
+            </div>
+            <div class="card">
+                <svg style="width:60px; fill:#FDD6BA;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M112 0C85.49 0 64 21.49 64 48V96H16C7.163 96 0 103.2 0 112C0 120.8 7.163 128 16 128H272C280.8 128 288 135.2 288 144C288 152.8 280.8 160 272 160H48C39.16 160 32 167.2 32 176C32 184.8 39.16 192 48 192H240C248.8 192 256 199.2 256 208C256 216.8 248.8 224 240 224H16C7.163 224 0 231.2 0 240C0 248.8 7.163 256 16 256H208C216.8 256 224 263.2 224 272C224 280.8 216.8 288 208 288H64V416C64 469 106.1 512 160 512C213 512 256 469 256 416H384C384 469 426.1 512 480 512C533 512 576 469 576 416H608C625.7 416 640 401.7 640 384C640 366.3 625.7 352 608 352V237.3C608 220.3 601.3 204 589.3 192L512 114.7C499.1 102.7 483.7 96 466.7 96H416V48C416 21.49 394.5 0 368 0H112zM544 237.3V256H416V160H466.7L544 237.3zM160 464C133.5 464 112 442.5 112 416C112 389.5 133.5 368 160 368C186.5 368 208 389.5 208 416C208 442.5 186.5 464 160 464zM528 416C528 442.5 506.5 464 480 464C453.5 464 432 442.5 432 416C432 389.5 453.5 368 480 368C506.5 368 528 389.5 528 416z">
+                    </path>
+                </svg>
+                <div class="card_text">
+                    <h3>Free shipping</h3>
+                    <p>
+                        We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="class4">
+        <div class="main4">
+            <h2>How it work</h2>
+        </div>
+        <div class="con">
+            <div class="bandeau">
+                <div><svg width="791" height="31" viewBox="0 0 791 31" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="injected-svg" data-src="assets/bandeau-desktop.svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M15.5 15.5H775.5" stroke="#FDD6BA" stroke-width="2"></path>
+                        <circle cx="15.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"></circle>
+                        <circle cx="395.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"></circle>
+                        <circle cx="775.5" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" stroke-width="2"></circle>
+                    </svg></div>
+            </div>
+        </div>
+        <div class="main5">
+
+            <div class="box3">
+                <h1 style="font-size: 100px;color: orange;">01</h1>
+                <h3 style="font-size: 40px;">Pick your coffee</h3>
+                <p>
+                    Special offers and swag when you subscribe, including 30% off your first shipment.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis cum dolorum distinctio dolore
+                    atque in dolor dignissimos harum maxime nisi.
+                </p>
+            </div>
+
+            <div class="box4">
+                <h1 style="font-size: 100px;color: orange;">02</h1>
+                <h3 style="font-size: 40px;">choose your frequency</h3>
+                <p>
+                    Special offers and swag when you subscribe, including 30% off your first shipment.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi velit aliquid itaque reiciendis
+                    accusamus, aliquam mollitia ratione impedit optio quo?
+                </p>
+            </div>
+
+            <div class="box5">
+                <h1 style="font-size: 100px;color: orange;">03</h1>
+                <h3 style="font-size: 40px;">Receive and enjoy</h3>
+                <p>
+                    Special offers and swag when you subscribe, including 30% off your first shipment.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas assumenda voluptatum molestias
+                    recusandae perferendis doloremque pariatur, voluptates architecto odio itaque?
+                </p>
+            </div>
+        </div>
+        <button class="hello">
+            Create
+            your plan</button>
+    </section>
+
+    <footer class="footer">
+        <div class="logo1">
+            <h3 style="font-size: 25px;"><img src="beans.png" alt=""> coffeeroasters</h3>
+
+        </div>
+
+        <ul class="footer1">
+            </div>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CREATE YOUR PLAN</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
